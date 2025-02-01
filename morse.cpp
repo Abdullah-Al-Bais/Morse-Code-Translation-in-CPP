@@ -34,10 +34,13 @@ int main()
     if (n==1)
     {
         cout<<"====English to Morse===="<<endl;
+        cout<<"............................................."<<endl;
+        cout<<"Enter your English message:"<<endl;
 
         getline(cin, input);
         transform(input.begin(), input.end(), input.begin(),::toupper);
 
+        cout<<"Morse Code:   ";
         for (i=0; i< input.length(); i++)
         {
             for(j =0; j<36; j++)
@@ -59,10 +62,11 @@ int main()
     else if(n==2)
     {
         cout<<"====Morse To English===="<<endl;
-
+        cout<<"............................................."<<endl;
+        cout<<"Enter your Morse Code:"<<endl;
         getline(cin, input);
 
-
+        cout<<"The Message:   ";
         for (i=0; i<input.length(); i++)
         {
             if(input[i]!=' ')
